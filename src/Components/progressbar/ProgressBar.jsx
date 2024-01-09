@@ -39,7 +39,7 @@ const handleChange = (e) => {
                 </div>
               </div>
             <div className='progressbar__buttons'>
-                <input type='number' value={inputValue} onChange={handleChange} placeholder='Input progress value'></input>
+                <input type='number' min="0" value={inputValue} onChange={handleChange} placeholder='Input progress value'></input>
                 <button onClick={Actions}>State</button>
                 <button onClick={() => dispatch(resetState())}>Reset All</button>
             </div>

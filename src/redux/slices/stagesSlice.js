@@ -41,10 +41,11 @@ export const stagesSlice = createSlice({
                 if (state.value>=item) {
                     state.progress+=100/state.quantity;
                     count++
-                } else if((state.value<item) & (state.value*2>item)) {
+                } else if((state.value<item) & ((state.value*2)>item)) {
                     state.progress+=(((state.value/state.thresholdPoints[count])*100)/state.quantity)
                 } 
             })
+            
         },
         resetState:(state)=>{
             state.value=0

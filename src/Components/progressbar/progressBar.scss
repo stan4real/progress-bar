@@ -36,3 +36,31 @@
     justify-content: center;
     margin-top: 2rem;
 }
+
+@media (max-width:570px){
+    .container{
+        width: 400px;
+    }
+    .progressbar__buttons {
+        flex-direction: row;
+        
+    }
+}
+@media (max-width:480px){
+    .container{
+        width: 280px;
+    }
+    .progressbar__buttons {
+        flex-direction: column;
+        
+    }
+}
+@media (max-width:320px){
+    .container{
+        width: 240px;
+    }
+    .progressbar__buttons {
+        flex-direction: column;
+        
+    }
+}
