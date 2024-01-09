@@ -1,1 +1,0 @@
-export const API = 'https://my-json-server.typicode.com/stan4real/data/stages'
